@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <title>Gee Movies</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/user-page.css">
+</head>
+<body onload="time()">
+    <header>
+        <h1 class="main-title">Gee Movies</h1>
+        <h2 id="current-time"></h2>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Bem-vindo de volta ao Gee Movies</h2>
+            <h3>Quem está usando?</h3>
+
+            <div class="users" id="container-users">
+                <!-- <div class="user">
+                    <div class="profile-photo"></div>
+                    <span class="profile-name"></span>
+                </div> -->
+            </div>
+
+            <button onclick="addProfile()">Add profile</button>
+        </div>
+    </main>
+
+    <script src="js/user-page-controls.js"></script>
+</body>
+</html>
