@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    --background-primary-color: #121214;
+    --primary-color-gradient-title: #FF267A;
+    --second-color-gradient-title: #FFA634;
+    --color-text: #F9F9F9;
+    --links-color: #2B6CB0;
+    --border-color: #E8E8E8;
+
+    font-family: 'Open Sans', sans-serif;
+
+    color: white;
+}
+
+body {
+    background-color: var(--background-primary-color);
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+main .container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+main .container .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container .logo h1 {
+    font-family: 'Mukta', sans-serif;
+    font-size: 70px;
+    background-image: linear-gradient(to right, var(--second-color-gradient-title), var(--primary-color-gradient-title));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+main .container .login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container .login-form form {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main .container .login-form form .campo-email,
+main .container .login-form form .campo-senha {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+main .container .login-form form .campo-email input,
+main .container .login-form form .campo-senha input {
+    height: 2.8rem;
+
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+
+    background-color: transparent;
+}
+
+input::placeholder {
+    padding-left: 20px;
+}
+
+main .container .login-form .secao-lembrar {
+    margin: 20px 0;
+}
+
+main .container .login-form .secao-lembrar #esqueceu-senha {
+    float: right;
+}
+
+main .container .login-form button {
+    height: 2.8rem;
+
+    font-weight: 700;
+
+    background-color: var(--second-color-gradient-title);
+    border: 0;
+    border-radius: 5px;
+
+    margin-bottom: 20px;
+}
+
+main a {
+    color: var(--links-color);
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 855px) {
+    main .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .container .logo {
+        display: none;
+    }
+
+    main .container .secao-lembrar {
+        font-size: .8rem;
+    }
+}
