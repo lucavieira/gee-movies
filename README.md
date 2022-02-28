@@ -7,6 +7,7 @@
 ## Tecnologias
   * HTML
   * CSS
+  * JS
 
 ## Status
   Em andamento...
