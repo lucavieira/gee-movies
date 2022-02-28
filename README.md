@@ -9,6 +9,7 @@
   * HTML
   * CSS
   * JS
+  * JQuery
 
 ## Status
   Em andamento...
