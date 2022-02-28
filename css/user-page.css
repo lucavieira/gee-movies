@@ -55,8 +55,6 @@ main .container .users .user .profile-photo {
     height: 100px;
 
     border-radius: 50%;
-
-    /* background-color: aqua; */
 }
 
 main .container .users .user .profile-name {

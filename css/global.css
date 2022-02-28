@@ -1,6 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    border: none;
 
     --background-primary-color: #121214;
     --primary-color-gradient-title: #FF267A;
@@ -11,15 +12,13 @@
     --button-color: #181818;
 
     font-family: 'Open Sans', sans-serif;
-
-    color: white;
 }
 
 body {
     background-color: var(--background-primary-color);
 }
 
-main, header {
+main, header, footer {
     width: 90%;
     max-width: 1200px;
     margin: auto;
