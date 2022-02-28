@@ -6,12 +6,15 @@
     --background-primary-color: #121214;
     --primary-color-gradient-title: #FF267A;
     --second-color-gradient-title: #FFA634;
+    --background-trailer: #121214a1;
     --color-text: #F9F9F9;
     --links-color: #2B6CB0;
     --border-color: #E8E8E8;
     --button-color: #181818;
 
     font-family: 'Open Sans', sans-serif;
+
+    color: var(--color-text);
 }
 
 body {
