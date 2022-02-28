@@ -1,4 +1,4 @@
-  <img src="images/gee-movies.png" align="center" />
+  <img src="images/gee-movies.png" />
   
 ## Gee Movies
   Um site inspirado na Netflix. Onde você poderá assistir seus filmes favoritos. Esse projeto surgiu após ver os desafios do
