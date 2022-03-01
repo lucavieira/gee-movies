@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/movies-page.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
     <section id="trailer-movie">
@@ -61,39 +63,12 @@
         <h2 class="popular">Populares</h2>
         <div class="separator"></div>
         <div class="popular-movies">
-            <div class="movie">
-                <span class="category">Categoria</span>
-                <div class="rate">
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                </div>
-                <h2 class="movie-title">Movie Title</h2>
-            </div>
-            <div class="movie">
-                <span class="category">Categoria</span>
-                <div class="rate">
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                </div>
-                <h2 class="movie-title">Movie Title</h2>
-            </div>
-            <div class="movie">
-                <span class="category">Categoria</span>
-                <div class="rate">
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                </div>
-                <h2 class="movie-title">Movie Title</h2>
-            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper"></div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
         </div>
     </main>
     <footer>
@@ -119,6 +94,31 @@
         </div>
     </footer>
 
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                660: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                980: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+            }
+        });
+      </script>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/movie-page-controls.js"></script>
 </body>
