@@ -10,6 +10,8 @@
   * CSS
   * JS
   * JQuery
+  * [TMDB](https://www.themoviedb.org/) - (The Movie Database) V.3
+  * [Swiper](https://swiperjs.com/) - (Para criação do slider)
 
 ## Status
   Em andamento...
