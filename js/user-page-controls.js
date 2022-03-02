@@ -19,23 +19,13 @@ function addProfile() {
     let profile_name = prompt('Quem está usando?')
     let profile_color = generatorColor()
 
-    let container_users = document.getElementById('container-users')
-    
-    let field_user = document.createElement('div')
-    let field_profile_photo = document.createElement('div')
-    let field_profile_name = document.createElement('span')
+    let field_user = $('<div class="user" onclick="changePage()"></div>')
+    let field_profile_photo = $('<div class="profile-photo"></div>').css('background-color', profile_color)
+    let field_profile_name = $('<span class="profile-name"></span>').html(profile_name)
 
-    field_user.classList.add('user')
-    field_profile_photo.classList.add('profile-photo')
-    field_profile_name.classList.add('profile-name')
-
-    field_profile_photo.style.backgroundColor = profile_color
-    field_profile_name.innerHTML = profile_name
-
-    field_user.appendChild(field_profile_photo)
-    field_user.appendChild(field_profile_name)
-
-    container_users.appendChild(field_user)
+    $(field_user).append(field_profile_photo)
+    $(field_user).append(field_profile_name)
+    $('#container-users').append(field_user)
 }
 
 function generatorColor() {
@@ -44,4 +34,8 @@ function generatorColor() {
     let blue = Math.random() * 255
 
     return `rgb(${red}, ${green}, ${blue})`
+}
+
+function changePage() {
+    window.location.assign('movies-page.html')
 }

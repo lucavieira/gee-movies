@@ -25,12 +25,12 @@
                 <form>
                     <div class="campo-email">
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="email@email.com">
+                        <input type="email" name="email" id="email" placeholder="email@email.com" required>
                     </div>
 
                     <div class="campo-senha">
                         <label for="password">Senha</label>
-                        <input type="password" name="password" id="password" placeholder="********">
+                        <input type="password" name="password" id="password" placeholder="********" required>
                     </div>
 
                     <div class="secao-lembrar">
@@ -39,12 +39,14 @@
                         <a href="#" id="esqueceu-senha">Esqueceu sua senha?</a>
                     </div>
 
-                    <button>Entrar</button>
                 </form>
+                <button id="btn-login">Entrar</button>
 
                 <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
             </div>
         </div>
     </main>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>
