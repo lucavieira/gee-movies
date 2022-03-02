@@ -16,5 +16,8 @@
 ## Status
   Em andamento...
 
-## Desenvolvedor
-  [Lucas Vieira](https://www.linkedin.com/in/lucas-vieira-dev/)
+## Autor
+  Lucas Vieira Veras
+
+  [LinkedIn](https://www.linkedin.com/in/lucas-vieira-dev/)
+  [E-mail](mailto:lukasveras14@gmail.com)
