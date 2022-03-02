@@ -32,15 +32,20 @@ main .container .login-form form {
 }
 
 main .container .login-form form .campo-email,
-main .container .login-form form .campo-senha {
+main .container .login-form form .campo-senha,
+main .container .login-form form .campo-nome {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
 
+main .container .login-form form .campo-nome {
+    margin-top: 20px;
 }
 
 main .container .login-form form .campo-email input,
-main .container .login-form form .campo-senha input {
+main .container .login-form form .campo-senha input,
+main .container .login-form form .campo-nome input {
     height: 2.8rem;
 
     border: 1px solid var(--border-color);
@@ -70,6 +75,7 @@ main .container .login-form button {
     border: 0;
     border-radius: 5px;
 
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
