@@ -8,7 +8,7 @@
 ## Tecnologias
   * HTML
   * CSS
-  * JS
+  * Javascript
   * JQuery
   * [TMDB](https://www.themoviedb.org/) - (The Movie Database) V.3
   * [Swiper](https://swiperjs.com/) - (Para criação do slider)
@@ -17,7 +17,7 @@
   Em andamento...
 
 ## Autor
-  Lucas Vieira Veras
+  **Lucas Vieira Veras**
 
-  [LinkedIn](https://www.linkedin.com/in/lucas-vieira-dev/)
-  [E-mail](mailto:lukasveras14@gmail.com)
+  #### [LinkedIn](https://www.linkedin.com/in/lucas-vieira-dev/)
+  #### [E-mail](mailto:lukasveras14@gmail.com)
