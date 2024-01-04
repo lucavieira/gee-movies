@@ -26,6 +26,8 @@ main .container h2 {
     font-weight: 300;
 
     margin-bottom: 20px;
+
+    text-align: center;
 }
 
 main .container h3 {
@@ -35,10 +37,12 @@ main .container h3 {
 
 main .container .users {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
 
-    margin-bottom: 90px;
+    margin: 20px 0px;
 }
 
 main .container .users .user {
@@ -46,8 +50,6 @@ main .container .users .user {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    margin-top: 90px;
 }
 
 main .container .users .user .profile-photo {
@@ -72,4 +74,8 @@ main .container button {
     margin-bottom: 20px;
 
     font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    
 }
