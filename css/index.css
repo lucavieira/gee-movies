@@ -19,11 +19,10 @@ main .container .login-form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 main .container .login-form form {
-    max-width: 350px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -46,16 +45,12 @@ main .container .login-form form .campo-nome {
 main .container .login-form form .campo-email input,
 main .container .login-form form .campo-senha input,
 main .container .login-form form .campo-nome input {
-    height: 2.8rem;
+    padding: 15px 150px 15px 10px;
 
     border: 1px solid var(--border-color);
     border-radius: 5px;
 
     background-color: transparent;
-}
-
-input::placeholder {
-    padding-left: 20px;
 }
 
 main .container .login-form .secao-lembrar {
@@ -67,18 +62,15 @@ main .container .login-form .secao-lembrar #esqueceu-senha {
 }
 
 main .container .login-form button {
-    width: 100%;
-    max-width: 350px;
-    height: 2.8rem;
+    padding: 15px;
 
     font-weight: 700;
 
     background-color: var(--second-color-gradient-title);
-    border: 0;
+    border: none;
     border-radius: 5px;
-
-    margin-top: 20px;
-    margin-bottom: 20px;
+    
+    margin: 20px 0px;
 }
 
 main a {
@@ -103,5 +95,11 @@ main a:hover {
 
     main .container .secao-lembrar {
         font-size: .8rem;
+    }
+
+    main .container .login-form form .campo-email input,
+    main .container .login-form form .campo-senha input,
+    main .container .login-form form .campo-nome input {
+        padding: 15px 100px 15px 10px;
     }
 }
