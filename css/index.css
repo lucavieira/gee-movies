@@ -62,14 +62,14 @@ main .container .login-form .secao-lembrar #esqueceu-senha {
 }
 
 main .container .login-form button {
-    padding: 15px;
+    padding: 15px 130px;
 
     font-weight: 700;
 
     background-color: var(--second-color-gradient-title);
     border: none;
     border-radius: 5px;
-    
+
     margin: 20px 0px;
 }
 
@@ -101,5 +101,9 @@ main a:hover {
     main .container .login-form form .campo-senha input,
     main .container .login-form form .campo-nome input {
         padding: 15px 100px 15px 10px;
+    }
+
+    main .container .login-form button {
+        padding: 15px 110px;
     }
 }
