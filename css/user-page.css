@@ -63,19 +63,15 @@ main .container .users .user .profile-name {
     margin-top: 10px;
 }
 
-main .container button {
+button {
     width: 150px;
     height: 2.2rem;
 
-    background-color: var(--button-color);
+    background: var(--second-color-gradient-title);
     border: none;
     border-radius: 5px;
 
     margin-bottom: 20px;
 
     font-weight: 600;
-}
-
-@media (max-width: 768px) {
-    
 }

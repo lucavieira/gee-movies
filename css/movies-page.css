@@ -49,7 +49,7 @@ header .heading nav a:hover {
     width: 65px;
     display: block;
 
-    background-color: var(--button-color);
+    background: var(--box-color);
 
     border-bottom-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -74,7 +74,7 @@ header .heading nav a:hover {
     width: 15px;
     height: 15px;
 
-    background-color: var(--second-color-gradient-title);
+    background: var(--second-color-gradient-title);
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
@@ -112,12 +112,12 @@ header .heading nav a:hover {
     margin-bottom: 50px;
 }
 
-.movie-draft button {
+button {
     width: 100%;
     max-width: 240px;
     height: 40px;
 
-    background-color: var(--second-color-gradient-title);
+    background: var(--second-color-gradient-title);
 
     border: none;
     border-radius: 5px;
