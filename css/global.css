@@ -32,6 +32,10 @@ body {
 }
 
 .btn {
+    background: var(--second-color-gradient-title);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
     transition: background .5s ease-in-out;
 }

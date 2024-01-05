@@ -93,6 +93,7 @@ const changeMovie = async (id) => {
     $('#main-description-movie').html(overview_movie)
     $('header').css('background', `radial-gradient(#0c0c0c61, #0c0c0c00), url(${image_background + background_movie}) no-repeat`)
     $('header').css('background-size', 'cover')
+    $('header').css('background-position', 'center')
     $('#trailer').attr('src', url_trailer)
 }
 

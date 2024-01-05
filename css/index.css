@@ -66,10 +66,6 @@ main .container .login-form .secao-lembrar #esqueceu-senha {
 
     font-weight: 700;
 
-    background: var(--second-color-gradient-title);
-    border: none;
-    border-radius: 5px;
-
     margin: 20px 0px;
 }
 

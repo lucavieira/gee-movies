@@ -72,12 +72,7 @@ main .container .users .user .profile-name {
 }
 
 .btn {
-    width: 150px;
-    height: 2.2rem;
-
-    background: var(--second-color-gradient-title);
-    border: none;
-    border-radius: 5px;
+    padding: 8px 30px;
 
     margin-bottom: 20px;
 
