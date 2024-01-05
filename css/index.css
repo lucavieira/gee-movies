@@ -61,7 +61,7 @@ main .container .login-form .secao-lembrar #esqueceu-senha {
     float: right;
 }
 
-button {
+.btn {
     padding: 15px 130px;
 
     font-weight: 700;
@@ -103,7 +103,7 @@ main a:hover {
         padding: 15px 100px 15px 10px;
     }
 
-    button {
+    .btn {
         padding: 15px 110px;
     }
 }

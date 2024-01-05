@@ -38,12 +38,21 @@
     <header>
         <div class="heading">
             <h1 class="main-title">Gee Movies</h1>
-            <nav>
+            <nav id="nav">
                 <img src="images/icons/search-icon.svg" alt="Search" id="search-icon">
-                <a href="#">Inicio</a>
-                <a href="#">Minha Lista</a>
                 <img src="images/icons/bell-icon.svg" alt="Bell" id="bell-icon">
                 <img src="images/icons/user-icon.svg" alt="User" id="user-icon">
+                <button aria-label="Abrir menu" id="btn-mobile" aria-controls="menu" aria-expanded="false" aria-haspopup="true">
+                    <span id="hamburguer"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#">Minha Lista</a>
+                    </li>
+                </ul>
             </nav>
         </div>
         <div class="movie-draft">
@@ -63,7 +72,7 @@
             <p class="movie-description" id="main-description-movie">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, distinctio asperiores, perferendis, eveniet in doloribus nemo eum quas repudiandae quo molestias natus perspiciatis libero dolor deleniti at vero neque vitae.
             </p>
-            <button id="btn-play">Assistir Agora</button>
+            <button id="btn-play" class="btn">Assistir Agora</button>
         </div>
     </header>
     <main>

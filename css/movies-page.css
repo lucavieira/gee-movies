@@ -21,12 +21,98 @@ header .heading {
 header .heading nav {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 20px;
+}
+
+header .heading nav #menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 40px;
 }
 
 header .heading nav img {
     width: 30px;
     height: 20px;
+
+    cursor: pointer;
+}
+
+header nav #btn-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header nav #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin: 0px;
+        gap: .5rem;
+    }
+
+    #hamburguer {
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburguer::before, #hamburguer::after {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+
+        transition: transform .5s;
+        position: relative;
+    }
+
+    #nav.ativo #hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.ativo #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.ativo #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    header .heading #nav #menu {
+        display: block;
+        width: 20%;
+        height: 0%;
+        position: absolute;
+        top: 70px;
+        right: 35px;
+        gap: 10px;
+        background: var(--second-color-gradient-title);
+        transition: .5s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    header .heading nav #menu li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        padding: 10px 0px;
+        border-bottom: 1px solid var(--color-text);
+    }
+
+    header .heading #nav.ativo #menu {
+        height: 86px;
+        visibility: visible;
+        overflow-y: auto;
+    }
 }
 
 header .heading nav a {
@@ -107,7 +193,7 @@ header .heading nav a:hover {
     margin-bottom: 50px;
 }
 
-button {
+.btn {
     width: 100%;
     max-width: 240px;
     height: 40px;
@@ -209,4 +295,8 @@ footer ul {
 footer ul li img {
     width: 18px;
     height: 18px;
+}
+
+@media (max-width: 768px) {
+
 }

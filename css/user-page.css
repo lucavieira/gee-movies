@@ -71,7 +71,7 @@ main .container .users .user .profile-name {
     margin-top: 10px;
 }
 
-button {
+.btn {
     width: 150px;
     height: 2.2rem;
 

@@ -2,6 +2,27 @@ let popular_movies = 'https://api.themoviedb.org/3/movie/popular?api_key=68cdca1
 let image_poster = 'https://image.tmdb.org/t/p/w300'
 let image_background = 'https://image.tmdb.org/t/p/original'
 
+const btnMobile = document.getElementById('btn-mobile')
+
+function mostrarMenu(event) {
+    if(event.type === 'touchstart') event.preventDefault()
+
+    const nav = document.getElementById('nav')
+    nav.classList.toggle('ativo')
+
+    const active = nav.classList.contains('ativo')
+    event.currentTarget.setAttribute('aria-expanded', active)
+
+    if(active) {
+        event.currentTarget.setAttribute('aria-label', 'Fechar menu')   
+    } else {
+        event.currentTarget.setAttribute('aria-label', 'Abrir menu')
+    }
+}
+
+btnMobile.addEventListener('click', mostrarMenu)
+btnMobile.addEventListener('touchstart', mostrarMenu)
+
 const requestMovies = async () => {
     const response = await fetch(popular_movies)
     const data = await response.json()
