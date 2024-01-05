@@ -19,7 +19,7 @@ function addProfile() {
     let profile_name = prompt('Quem está usando?')
     let profile_color = generatorColor()
 
-    let field_user = $('<div class="user" onclick="changePage()"></div>')
+    let field_user = $('<div class="user centralizar" onclick="changePage()"></div>')
     let field_profile_photo = $('<div class="profile-photo"></div>').css('background-color', profile_color)
     let field_profile_name = $('<span class="profile-name"></span>').html(profile_name)
 
