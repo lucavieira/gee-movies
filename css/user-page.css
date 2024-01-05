@@ -57,6 +57,14 @@ main .container .users .user .profile-photo {
     height: 100px;
 
     border-radius: 50%;
+
+    transition: transform .5s ease-in-out;
+
+    cursor: pointer;
+}
+
+main .container .users .user .profile-photo:hover {
+    transform: scale(1.1);
 }
 
 main .container .users .user .profile-name {
