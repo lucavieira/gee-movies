@@ -11,6 +11,28 @@ const passwordMinLengthError = document.getElementById('password-min-length-erro
 
 const passwordDoesntMatchError = document.getElementById('password-doesnt-match-error')
 
+function register() {
+    showLoading()
+
+    firebase.auth().createUserWithEmailAndPassword(
+        email.value, password.value
+    ).then(() => {
+        hideLoading()
+        window.location.href = "../users-page.html"
+    }).catch(error => {
+        hideLoading()
+        alert(getErrorMessage(error))
+    })
+}
+
+function getErrorMessage(error) {
+    if(error.code == 'auth/email-already-in-use') {
+        return "Email já está em uso!"
+    }
+
+    return error.message
+}
+
 function onChangeEmail() {
     emailRequiredError.style.display = email.value ? "none" : "block"
     emailInvalidError.style.display = validateEmail(email.value) ? "none" : "block"
