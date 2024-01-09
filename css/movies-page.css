@@ -1,7 +1,7 @@
 header {
     height: 100vh;
 
-    background: radial-gradient(#0c0c0c61, #0c0c0c00), url(../images/background-movie.png) no-repeat;
+    background: radial-gradient(#0c0c0c61, #0c0c0c00), url(../assets/images/background-movie.png) no-repeat;
     background-size: cover;
     background-position: center;
     color: var(--color-text);

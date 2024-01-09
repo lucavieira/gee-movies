@@ -15,7 +15,7 @@ function login() {
         email.value, password.value
     ).then(response => {
         hideLoading()
-        window.location.href = 'users-page.html'
+        window.location.href = '../assets/pages/users-page.html'
     }).catch(error => {
         hideLoading()
         alert(getErrorMessage(error));

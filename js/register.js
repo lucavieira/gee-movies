@@ -18,7 +18,7 @@ function register() {
         email.value, password.value
     ).then(() => {
         hideLoading()
-        window.location.href = "../users-page.html"
+        window.location.href = "../assets/pages/users-page.html"
     }).catch(error => {
         hideLoading()
         alert(getErrorMessage(error))
