@@ -2,6 +2,14 @@
     font-size: 70px;
 }
 
+.btn-login, .btn-register {
+    padding: 15px 130px;
+
+    font-weight: 700;
+
+    margin: 20px 0px;
+}
+
 main .login-form {
     flex-direction: column;
     gap: 20px;
@@ -40,29 +48,9 @@ main .login-form form .campo-nome input {
 }
 
 main .login-form .secao-lembrar {
+    display: flex;
+    justify-content: space-between;
     margin: 20px 0;
-}
-
-main .login-form .secao-lembrar #esqueceu-senha {
-    float: right;
-}
-
-.btn {
-    padding: 15px 130px;
-
-    font-weight: 700;
-
-    margin: 20px 0px;
-}
-
-main a {
-    color: var(--links-color);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-main a:hover {
-    text-decoration: underline;
 }
 
 @media (max-width: 855px) {
@@ -74,7 +62,7 @@ main a:hover {
         font-size: .8rem;
     }
 
-    .btn {
+    .btn-login, .btn-register {
         padding: 15px 110px;
     }
 }
@@ -91,20 +79,28 @@ main a:hover {
         padding: 10px;
     }
 
-    .btn {
-        margin: 10px 0px;
-        padding: 15px 90px;
-    }
-
     main .login-form .secao-lembrar {
         display: flex;
+        flex-direction: column;
         align-items: center;
         gap: 10px;
+
+        margin: 10px 0px;
+    }
+
+    .login-form h2 {
+        font-size: 1rem;
+        margin-bottom: 10px;
     }
 
     .secao-lembrar label {
         display: flex;
         align-items: center;
         gap: 4px;
+    }
+
+    .btn-login, .btn-register {
+        margin: 10px 0px;
+        padding: 15px 90px;
     }
 }
