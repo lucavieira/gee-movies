@@ -4,6 +4,12 @@ let password = document.getElementById('password')
 const emailInvalidError = document.getElementById('email-invalid-error')
 const emailRequiredError = document.getElementById('email-required-error')
 
+firebase.auth().onAuthStateChanged(user => {
+    if(user) {
+        window.location.href = "../assets/pages/users-page.html"
+    }
+})
+
 function changeEmail() {
     emailRequiredError.style.display = email.value ? "none" : "block"
     emailInvalidError.style.display = validateEmail(email.value) ? "none" : "block"

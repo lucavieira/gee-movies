@@ -25,6 +25,12 @@ function register() {
     })
 }
 
+firebase.auth().onAuthStateChanged(user => {
+    if(user) {
+        window.location.href = "./users-page.html"
+    }
+})
+
 function getErrorMessage(error) {
     if(error.code == 'auth/email-already-in-use') {
         return "Email já está em uso!"

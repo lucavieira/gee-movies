@@ -58,7 +58,7 @@ main .container .users .user .profile-photo:hover {
     transform: scale(1.1);
 }
 
-main .container .users .user .profile-name {
+main .container .users .user #profile-name {
     margin-top: 10px;
 }
 

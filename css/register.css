@@ -44,6 +44,10 @@ main .login-form form {
 }
 
 @media (max-width: 855px) {
+    /* body {
+        padding: 50px 0px;
+    } */
+    
     main .login-form {
         gap: 5px;
     }

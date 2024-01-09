@@ -7,6 +7,10 @@ header {
     color: var(--color-text);
 }
 
+.btn-sair {
+    color: var(--color-text);
+}
+
 .heading, .movie-draft, footer {
     margin: 0px 20px;
 }
