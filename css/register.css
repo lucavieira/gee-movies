@@ -2,7 +2,7 @@
     font-size: 70px;
 }
 
-.btn-login {
+.btn-register {
     padding: 15px 130px;
 
     font-weight: 700;
@@ -23,13 +23,17 @@ main .login-form form {
     font-weight: 400;
 }
 
-.campo-email, .campo-senha {
+.campo-email, .campo-senha, .campo-nome {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.campo-email input, .campo-senha input {
+.campo-nome {
+    margin-top: 20px;
+}
+
+.campo-email input, .campo-senha input, .campo-nome input {
     width: 300px;
     padding: 15px;
 
@@ -39,22 +43,12 @@ main .login-form form {
     background-color: transparent;
 }
 
-main .login-form .secao-lembrar {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-}
-
 @media (max-width: 855px) {
     main .login-form {
         gap: 5px;
     }
 
-    main .secao-lembrar {
-        font-size: .8rem;
-    }
-
-    .btn-login {
+    .btn-register {
         padding: 15px 110px;
     }
 }
@@ -64,18 +58,9 @@ main .login-form .secao-lembrar {
         font-size: 3.5rem;
     }
 
-    .campo-email input, .campo-senha input {
+    .campo-email input, .campo-senha input, .campo-nome input {
         width: 200px;
         padding: 10px;
-    }
-
-    main .login-form .secao-lembrar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-
-        margin: 10px 0px;
     }
 
     .login-form h2 {
@@ -83,13 +68,7 @@ main .login-form .secao-lembrar {
         margin-bottom: 10px;
     }
 
-    .secao-lembrar label {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-    }
-
-    .btn-login {
+    .btn-register {
         margin: 10px 0px;
         padding: 15px 90px;
     }

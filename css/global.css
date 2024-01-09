@@ -51,6 +51,10 @@ body {
     background: var(--button-hover);
 }
 
+.btn:disabled {
+    background: var(--box-color);
+}
+
 .btn-link {
     color: var(--links-color);
     background: none;
