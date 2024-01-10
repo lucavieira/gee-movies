@@ -29,13 +29,12 @@ function login() {
 }
 
 function recuperarSenha() {
-    // showLoading()
+    showLoading()
 
     firebase.auth().sendPasswordResetEmail(email.value)
     .then(response => {
-        console.log(email.value)
-        // hideLoading()
-        // alert('Email enviado com sucesso!')
+        hideLoading()
+        alert('Email enviado com sucesso!')
     }).catch(error => {
         hideLoading()
         alert(getErrorMessage(error))
